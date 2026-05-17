@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homework1.css">
+    <title>BuyList</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="column-left">
+            <div class="list-row">
+                <div class="add-item-form">
+                    <input type="text" class="add-item-input" placeholder="Назва товару">
+                    <button class="btn-add" data-tooltip="Додати новий товар">Додати</button>
+                </div>
+            </div>
+
+            <div class="list-row">
+                <div class="item-name">Помідори</div>
+                <div class="item-controls">
+                    <span class="item-count" data-tooltip="Кількість">2</span>
+                </div>
+                <div class="item-actions">
+                    <button class="btn-status disabled" data-tooltip="Товар ще не куплено">Не куплено</button>
+                </div>
+            </div>
+
+            <div class="list-row">
+                <div class="item-name">Печиво</div>
+                <div class="item-controls">
+                    <button class="btn-circle btn-minus" data-tooltip="Зменшити">&minus;</button>
+                    <span class="item-count">2</span>
+                    <button class="btn-circle btn-plus" data-tooltip="Збільшити">+</button>
+                </div>
+                <div class="item-actions">
+                    <button class="btn-status" data-tooltip="Відмітити як куплене">Куплено</button>
+                    <button class="btn-delete" data-tooltip="Видалити товар">&times;</button>
+                </div>
+            </div>
+
+            <div class="list-row">
+                <div class="item-name editing">
+                    <input type="text" value="Сир" placeholder="Назва товару">
+                </div>
+                <div class="item-controls">
+                    <button class="btn-circle btn-minus faded" data-tooltip="Мінімум 1">&minus;</button>
+                    <span class="item-count">1</span>
+                    <button class="btn-circle btn-plus" data-tooltip="Збільшити">+</button>
+                </div>
+                <div class="item-actions">
+                    <button class="btn-status" data-tooltip="Відмітити як куплене">Куплено</button>
+                    <button class="btn-delete" data-tooltip="Видалити товар">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-right">
+            <div class="stat-section">
+                <h2>Залишилося</h2>
+                <div class="tag-list">
+                    <div class="tag" data-tooltip="Залишилось купити">Печиво <span class="tag-count">2</span></div>
+                    <div class="tag" data-tooltip="Залишилось купити">Сир <span class="tag-count">1</span></div>
+                </div>
+            </div>
+            
+            <div class="stat-section">
+                <h2>Куплено</h2>
+                <div class="tag-list">
+                    <div class="tag bought" data-tooltip="Вже куплено">Помідори <span class="tag-count">2</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="developer-badge">
+        <div class="badge-content">
+            <span class="badge-title">BuyList</span>
+            <span class="badge-author">Гамза Данило</span>
+        </div>
+    </div>
+
+</body>
+</html>
